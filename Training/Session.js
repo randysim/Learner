@@ -1,6 +1,7 @@
 const Fs = require("fs");
 const Discord = require('discord.js');
 var Sessions = {};
+var model = undefined;
 
 module.exports = {
     add: function (id, type) {
@@ -64,5 +65,11 @@ module.exports = {
 
         Fs.writeFileSync("./Convo/Dataset.json", JSON.stringify(Dataset));
         Fs.writeFileSync("./Convo/Stats.json", JSON.stringify(Stats));
+    },
+    addModel(trainedModel) {
+        model = trainedModel;
+    },
+    getModel() {
+        return model;
     }
 }

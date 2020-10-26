@@ -32,6 +32,13 @@ module.exports = {
         let TrainEmbed;
         var Meta = JSON.parse(Fs.readFileSync("./Training/Meta.json"));
 
+        if (Meta.blacklisted.includes(message.author.id)) {
+            const ErrorEmbed = new Discord.MessageEmbed()
+                .setTitle("**ERRORR**")
+                .setDescription("You are blacklisted.")
+            return message.channel.send(ErrorEmbed);
+        }
+
         if (Meta.type == "pattern") {
             TrainEmbed = new Discord.MessageEmbed()
                 .setTitle("**TRAIN**")

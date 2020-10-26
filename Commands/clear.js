@@ -20,14 +20,31 @@ module.exports = {
             );
         }
 
-        Fs.writeFileSync("./Convo/Dataset.json", JSON.stringify({}));
+        Fs.writeFileSync("./Convo/Dataset.json", JSON.stringify({
+            "greeting": {
+                "patterns": [],
+                "responses": []
+            },
+            "goodbye": {
+                "patterns": [],
+                "responses": []
+            },
+            "insult": {
+                "patterns": [],
+                "responses": []
+            },
+            "compliment": {
+                "patterns": [],
+                "responses": []
+            }
+        }));
         Fs.writeFileSync(
             "./Convo/Stats.json",
             JSON.stringify({
-                "greetings": 0,
-                "goodbyes": 0,
-                "insults": 0,
-                "compliments": 0,
+                "greeting": 0,
+                "goodbye": 0,
+                "insult": 0,
+                "compliment": 0,
                 "users": {}
             })
         );
