@@ -1,6 +1,5 @@
 const Config = require("../config.js");
-const MI = require("../Training/Interface.js");
-
+const Session = require("../Training/Session.js");
 /* MODULES */
 
 module.exports = {
@@ -33,8 +32,9 @@ module.exports = {
                     return Command.execute(Env);
             }
         }
-        if (message.channel.id == "722621224470970370") {
-            MI.receive(message);
+
+        if (message.channel.name.toLowerCase() == "training") {
+            Session.receive(message);
         }
     },
 };
