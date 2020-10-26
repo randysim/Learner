@@ -7,6 +7,13 @@ module.exports = {
         const message = Env.message;
         const args = Env.args;
 
+        if (message.author.id != "325447731676184576") {
+            const ErrorEmbed = new Discord.MessageEmbed()
+                .setTitle("**Insufficient Permission**")
+                .setDescription("No");
+            return message.channel.send(ErrorEmbed);
+        }
+
         if (!args[1]) {
             const ErrorEmbed = new Discord.MessageEmbed()
                 .setTitle("**ERROR**")

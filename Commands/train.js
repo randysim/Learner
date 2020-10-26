@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const Session = require("../Training/Session.js");
+const Fs = require("fs");
 
 module.exports = {
     names: ["train", "teach"],
@@ -28,10 +29,23 @@ module.exports = {
             return message.channel.send(ErrorEmbed);
         }
 
-        let TrainEmbed = new Discord.MessageEmbed()
-            .setTitle("**TRAIN**")
-            .setDescription("Type endsess to stop training. As of now, type messages that pertain to " + args[1]);
+        let TrainEmbed;
+        var Meta = JSON.parse(Fs.readFileSync("./Training/Meta.json"));
+
+        if (Meta.type == "pattern") {
+            TrainEmbed = new Discord.MessageEmbed()
+                .setTitle("**TRAIN**")
+                .setDescription("Type endsess to stop training. As of now, type messages that pertain to " + args[1]);
+            Session.add(message.author.id, args[1]);
+        } else {
+            var Dataset = JSON.parse(Fs.readFileSync("./Convo/Dataset.json"))[args[1]];
+            TrainEmbed = new Discord.MessageEmbed()
+                .setTitle("**TRAIN**")
+                .setDescription(`**Respond to:**\n${Dataset.patterns[Math.floor(Math.random() * Dataset.patterns.length)]}`)
+            Session.addResponse(message.author.id, args[1], Dataset);
+        }
+
         message.channel.send(TrainEmbed);
-        Session.add(message.author.id, args[1]);
+
     }
 }

@@ -1,1 +1,103 @@
-{"greeting":{"patterns":["hello","whats up","yo wassup","howdy","salutations","hey man","hey hey","hallo","helo","wassup dawg","yo homie whats good","mah man whats up","hi","helloo","hi (:","welcome","nice to meet u"],"responses":[]},"goodbye":{"patterns":["goodbye","cya","see ya","later man","later bro","toodles","sad to see you go","adios","shalome my nigga","mozle tov"],"responses":[]},"insult":{"patterns":["you suck","bad","noob","you're trash","garbage bot","actually terrible","jerk","cunt","fucker","eat shit","you're bad","retard","retarded","retarded bot","stupid ass hoe","ritard","retrad","rarted","gay nibba","l.endsess","you look like a mf burnt chicken nugget"],"responses":[]},"compliment":{"patterns":["you're the best bot","good","you're amazing","amazing bot","good bot","i love you","you the best","cool bot","you're so cool","great bot","beautiful bot","you're beautiful","i admire you","you are beautiful","you are great","you are amazing","you are lovely","you don't know you're beautiful","ur a price of shit","i hate you","homk","homo","penis is timy","bet you kiss the floor you fucking loser","can't lift more than 4 pounds of the ground weakass"],"responses":[]}}
+{
+    "greeting": {
+        "patterns": [
+            "hello",
+            "whats up",
+            "yo wassup",
+            "howdy",
+            "salutations",
+            "hey man",
+            "hey hey",
+            "hallo",
+            "helo",
+            "wassup dawg",
+            "yo homie whats good",
+            "mah man whats up",
+            "hi",
+            "helloo",
+            "hi (:",
+            "welcome",
+            "nice to meet u"
+        ],
+        "responses": [
+            "ah thats too formal for me but hello",
+            "nice to meet u too"
+        ]
+    },
+    "goodbye": {
+        "patterns": [
+            "goodbye",
+            "cya",
+            "see ya",
+            "later man",
+            "later bro",
+            "toodles",
+            "sad to see you go",
+            "adios",
+            "mozle tov"
+        ],
+        "responses": []
+    },
+    "insult": {
+        "patterns": [
+            "you suck",
+            "bad",
+            "noob",
+            "you're trash",
+            "garbage bot",
+            "actually terrible",
+            "jerk",
+            "cunt",
+            "fucker",
+            "eat shit",
+            "you're bad",
+            "retard",
+            "retarded",
+            "retarded bot",
+            "stupid ass hoe",
+            "ritard",
+            "retrad",
+            "rarted",
+            "gay nibba",
+            "you look like a mf burnt chicken nugget"
+        ],
+        "responses": [
+            "no thank you",
+            "no you",
+            "wdym by that",
+            "is that really the best you can come up with",
+            "you spelled it wrong",
+            "nah i don't think so"
+        ]
+    },
+    "compliment": {
+        "patterns": [
+            "you're the best bot",
+            "good",
+            "you're amazing",
+            "amazing bot",
+            "good bot",
+            "i love you",
+            "you the best",
+            "cool bot",
+            "you're so cool",
+            "great bot",
+            "beautiful bot",
+            "you're beautiful",
+            "i admire you",
+            "you are beautiful",
+            "you are great",
+            "you are amazing",
+            "you are lovely",
+            "you don't know you're beautiful",
+            "ur a price of shit",
+            "i hate you",
+            "homk",
+            "homo",
+            "penis is timy",
+            "bet you kiss the floor you fucking loser",
+            "can't lift more than 4 pounds of the ground weakass"
+        ],
+        "responses": []
+    }
+}
