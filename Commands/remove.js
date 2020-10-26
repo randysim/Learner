@@ -35,8 +35,14 @@ module.exports = {
                 .setDescription("Specify phrase to delete from dataset");
             return message.channel.send(ErrorEmbed);
         }
-
         var Dataset = JSON.parse(Fs.readFileSync("./Convo/Dataset.json"));
+
+        if (Dataset[args[1]][args[2] + "s"].find(e => e == sentence)) {
+            var Stats = JSON.parse(Fs.readFileSync("./Convo/Stats.json"));
+            Stats[args[1]]--;
+            Fs.writeFileSync("./Convo/Stats.json", JSON.stringify(Stats));
+        }
+
         Dataset[args[1]][args[2] + "s"] = Dataset[args[1]][args[2] + "s"].filter(e => e != sentence);
         Fs.writeFileSync("./Convo/Dataset.json", JSON.stringify(Dataset));
 
