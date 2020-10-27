@@ -33,6 +33,8 @@ module.exports = {
         }
         lastcommand = new Date().getTime();
 
+        message.channel.startTyping();
+
         const sentenceEncoder = await use.load();
         var Data = [{ message: phrase }];
         var Sentences = Data.map(t => t.message.toLowerCase());
@@ -87,7 +89,7 @@ module.exports = {
                 }
             })
         }
-
+        message.channel.stopTyping();
         message.channel.send(possibleResponses[Math.floor(Math.random() * possibleResponses.length)])
 
         var Meta = JSON.parse(Fs.readFileSync("./Training/Meta.json"));
