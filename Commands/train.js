@@ -24,7 +24,7 @@ module.exports = {
 
         if (!["greeting", "goodbye", "insult", "compliment"].includes(args[1])) {
             const ErrorEmbed = new Discord.MessageEmbed()
-                .setTitle("**ERRORR**")
+                .setTitle("**ERROR**")
                 .setDescription("Not a valid category. Valid categories are\n(greeting, goodbye, insult, compliment)")
             return message.channel.send(ErrorEmbed);
         }

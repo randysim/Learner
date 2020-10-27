@@ -18,6 +18,7 @@ const trainAI = async () => {
     var yTrain = tf.tensor2d(
         trainingData.map(t => [t.type == "greeting" ? 1 : 0, t.type == "goodbye" ? 1 : 0, t.type == "insult" ? 1 : 0, t.type == "compliment" ? 1 : 0])
     )
+
     const model = tf.sequential();
     model.add(
         tf.layers.dense({
@@ -39,7 +40,7 @@ const trainAI = async () => {
         batchSize: 32,
         validationSplit: 0.1,
         shuffle: true,
-        epochs: 10,
+        epochs: 300,
         callbacks: { onBatchEnd }
     }).then(info => {
         console.log('Final accuracy', info.history.acc);

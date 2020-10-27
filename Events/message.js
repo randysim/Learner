@@ -6,7 +6,7 @@ module.exports = {
     event: "message",
     async receive(message) {
         /* ERROR */
-        if (message.author.bot) return;
+        if (message.author.bot || message.author.id == "365686238717411331") return;
         if (
             message.member &&
             message.member.roles.cache.find(
