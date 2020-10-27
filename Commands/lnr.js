@@ -3,6 +3,7 @@ const Fs = require("fs");
 const Session = require("../Training/Session.js");
 const use = require("@tensorflow-models/universal-sentence-encoder");
 const tf = require("@tensorflow/tfjs-node");
+const JW = require("../Training/JaroWinkler.js");
 var lastcommand = 0;
 
 module.exports = {
@@ -59,16 +60,38 @@ module.exports = {
                 predicted = "Compliment";
                 break;
         }
-        var Str = `**PREDICTED - ${predicted}**\n${phrase}\nGreeting - ${prediction[0]}\nGoodbye - ${prediction[1]}\nInsult - ${prediction[2]}\nCompliment - ${prediction[3]}`;
 
-        let Embed = new Discord.MessageEmbed()
-            .setTitle("**AI Predictions**")
-            .setDescription(Str);
-        message.channel.send(Embed);
+        var Dataset = JSON.parse(Fs.readFileSync("./Convo/Dataset.json"));
+        var input = [undefined, 0];
+
+        Dataset[predicted.toLowerCase()].patterns.forEach(msg => {
+            var weight = JW(phrase, msg);
+            if (weight > input[1]) {
+                input[0] = msg;
+                input[1] = weight;
+            }
+        });
+
+        var possibleResponses = [];
+        if (input[1] > 0.5) {
+            Dataset[predicted.toLowerCase()].responses.forEach(res => {
+                if (res.question == input[0]) {
+                    possibleResponses.push(res.message);
+                }
+            });
+        }
+        if (possibleResponses.length == 0) {
+            Dataset[predicted.toLowerCase()].responses.forEach(res => {
+                if (res.question == "DEFAULT") {
+                    possibleResponses.push(res.message);
+                }
+            })
+        }
+
+        message.channel.send(possibleResponses[Math.floor(Math.random() * possibleResponses.length)])
 
         var Meta = JSON.parse(Fs.readFileSync("./Training/Meta.json"));
         if (Meta.selflearning && highest[1] > 0.6) {
-            var Dataset = JSON.parse(Fs.readFileSync("./Convo/Dataset.json"));
             if (Dataset[predicted.toLowerCase()].patterns.includes(phrase)) return;
             Dataset[predicted.toLowerCase()].patterns.push(phrase);
             Fs.writeFileSync("./Convo/Dataset.json", JSON.stringify(Dataset));

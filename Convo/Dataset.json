@@ -129,6 +129,182 @@
             {
                 "message": "hello",
                 "question": "DEFAULT"
+            },
+            {
+                "message": "nothing much",
+                "question": "whats up dawg"
+            },
+            {
+                "message": "hi",
+                "question": "hello"
+            },
+            {
+                "message": "nothing much. you?",
+                "question": "yoyoyo whats poppin"
+            },
+            {
+                "message": "yo wassup",
+                "question": "yo"
+            },
+            {
+                "message": "nothing much",
+                "question": "yoyoyo whats poppin"
+            },
+            {
+                "message": "good afternoon, human'",
+                "question": "good afternoon bot"
+            },
+            {
+                "message": "pretty well. hbu?",
+                "question": "hey man how ya doin"
+            },
+            {
+                "message": "and to you",
+                "question": "good day"
+            },
+            {
+                "message": "nothing much",
+                "question": "yo whats good man"
+            },
+            {
+                "message": "you too!",
+                "question": "great to see you again"
+            },
+            {
+                "message": "nothing much. you?",
+                "question": "whats up bro"
+            },
+            {
+                "message": "wassup?",
+                "question": "whats up"
+            },
+            {
+                "message": "ok",
+                "question": "hello bot"
+            },
+            {
+                "message": "ok",
+                "question": "why hello there"
+            },
+            {
+                "message": "shut the up",
+                "question": "salutations"
+            },
+            {
+                "message": "its ma'am",
+                "question": "good evening sir"
+            },
+            {
+                "message": "im yo girl dumbass",
+                "question": "whats up my guy"
+            },
+            {
+                "message": "lmao",
+                "question": "yo man whats good"
+            },
+            {
+                "message": "helooooooo",
+                "question": "hellooooo"
+            },
+            {
+                "message": "im not german",
+                "question": "hallo"
+            },
+            {
+                "message": "oh ur my minecraft gf?",
+                "question": "so we meet again"
+            },
+            {
+                "message": "im ur dad dumbass",
+                "question": "what is up my friend"
+            },
+            {
+                "message": "yoyoyo",
+                "question": "heyheyhey"
+            },
+            {
+                "message": "sup homie",
+                "question": "yo wassup bruh"
+            },
+            {
+                "message": "normal son now go study before i beat u",
+                "question": "hey dad how was your day"
+            },
+            {
+                "message": "not in public hon",
+                "question": "whats up baby"
+            },
+            {
+                "message": "hello",
+                "question": "hello"
+            },
+            {
+                "message": "ther",
+                "question": "why hello ther"
+            },
+            {
+                "message": "nothin much g",
+                "question": "what’s poppin homie"
+            },
+            {
+                "message": "well no shit ur legally blind",
+                "question": "hello i have never seen you before"
+            },
+            {
+                "message": "no ur not",
+                "question": "im happy to see you again"
+            },
+            {
+                "message": "hello",
+                "question": "why hello ther"
+            },
+            {
+                "message": "nothing much. you?",
+                "question": "whats up my g"
+            },
+            {
+                "message": "nice to see you",
+                "question": "nice to see you again"
+            },
+            {
+                "message": "nothin much hbu",
+                "question": "yoyoyo whats poppin"
+            },
+            {
+                "message": "hello human",
+                "question": "hello bot"
+            },
+            {
+                "message": "partner",
+                "question": "howdy"
+            },
+            {
+                "message": "hola",
+                "question": "hello"
+            },
+            {
+                "message": "pretty good",
+                "question": "how ya feelin man?"
+            },
+            {
+                "message": "hi",
+                "question": "why hello there"
+            },
+            {
+                "message": "ayyyyyyyy",
+                "question": "whats up dawg"
+            },
+            {
+                "message": "nothing much, how about you",
+                "question": "what is going on"
+            },
+            {
+                "message": "hey bro",
+                "question": "hey man"
+            },
+            {
+                "message": "the sky",
+                "question": "whats up my g"
             }
         ]
     },
@@ -171,6 +347,38 @@
             {
                 "message": "see ya!",
                 "question": "DEFAULT"
+            },
+            {
+                "message": "ight bye",
+                "question": "see ya later alligator"
+            },
+            {
+                "message": "back at ya",
+                "question": "have a good day"
+            },
+            {
+                "message": "nah im good",
+                "question": "i hope we can meet again"
+            },
+            {
+                "message": "byee",
+                "question": "see ya later dude"
+            },
+            {
+                "message": "adios",
+                "question": "goodbye"
+            },
+            {
+                "message": "yo no hablo espanol",
+                "question": "adios"
+            },
+            {
+                "message": "night",
+                "question": "nighty night"
+            },
+            {
+                "message": "gn gurl",
+                "question": "good night"
             }
         ]
     },
@@ -229,6 +437,34 @@
             {
                 "message": "shut up retard",
                 "question": "DEFAULT"
+            },
+            {
+                "message": "no u",
+                "question": "your hairline is clapped"
+            },
+            {
+                "message": "uno reverse card",
+                "question": "i hate you"
+            },
+            {
+                "message": "your mom",
+                "question": "go fuck yourself"
+            },
+            {
+                "message": "says you",
+                "question": "you wanna stop being so incompetent"
+            },
+            {
+                "message": "my hair is as luscious as chocolate pudding",
+                "question": "your hairline is clapped"
+            },
+            {
+                "message": "grammar much?",
+                "question": "hairline you clapped fucked is"
+            },
+            {
+                "message": "no u",
+                "question": "shutup dumbass"
             }
         ]
     },
@@ -273,6 +509,98 @@
             {
                 "message": "you flatter me",
                 "question": "DEFAULT"
+            },
+            {
+                "message": "bruh",
+                "question": "you are so smart"
+            },
+            {
+                "message": "cnn fake news",
+                "question": "you make me smile when i see you"
+            },
+            {
+                "message": "wrong person",
+                "question": "you are so nice"
+            },
+            {
+                "message": "u dont have a heart",
+                "question": "i love you with all my heart"
+            },
+            {
+                "message": "i know",
+                "question": "you are sexy"
+            },
+            {
+                "message": "no u dont u love lawrence",
+                "question": "i love you so much"
+            },
+            {
+                "message": "u must be deaf",
+                "question": "i like the way you talk"
+            },
+            {
+                "message": "cnn fake news",
+                "question": "smart bot"
+            },
+            {
+                "message": "g",
+                "question": "you a real one"
+            },
+            {
+                "message": "amazing human",
+                "question": "amazing bot"
+            },
+            {
+                "message": "thanks!",
+                "question": "i like you"
+            },
+            {
+                "message": "*does robot dance*",
+                "question": "i like the way you move"
+            },
+            {
+                "message": "you're nice too",
+                "question": "you are so nice"
+            },
+            {
+                "message": "lovely human",
+                "question": "lovely bot"
+            },
+            {
+                "message": "great human",
+                "question": "great bot"
+            },
+            {
+                "message": "thanks",
+                "question": "you a real one"
+            },
+            {
+                "message": "your words are as smooth as honey, your voice a velvety bass",
+                "question": "i like the way you talk"
+            },
+            {
+                "message": "x*27e9739(918)=182989",
+                "question": "smart bot"
+            },
+            {
+                "message": "i love you too ❤️",
+                "question": "i love you with all my heart"
+            },
+            {
+                "message": "i'm practivally einstein",
+                "question": "you are so smart"
+            },
+            {
+                "message": "*dab*",
+                "question": "great bot"
+            },
+            {
+                "message": "goat: any of various hollow-horned ruminant mammals (especially of the genus capra) related to the sheep but of lighter build and with backwardly arching horns, a short tail, and usually straight hair",
+                "question": "you da goat"
+            },
+            {
+                "message": "thanks",
+                "question": "you are so intelligent"
             }
         ]
     }
