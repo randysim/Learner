@@ -1,3 +1,5 @@
+// Lol i didn't make this btw just stole it off the internet
+
 const JaroWinkler = function (s1, s2) {
     var m = 0;
 
