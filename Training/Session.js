@@ -12,11 +12,12 @@ module.exports = {
             lastmessage: new Date().getTime(),
         };
     },
-    addResponse: function (id, type, dataset) {
+    addResponse: function (id, type, dataset, question) {
         Sessions[id] = {
             mode: "response",
             type: type,
             messages: [],
+            question: question,
             lastmessage: new Date().getTime(),
             dataset: dataset,
         }
@@ -33,15 +34,21 @@ module.exports = {
             return;
         }
 
-        Sessions[message.author.id].messages.push(message.content.toLowerCase());
+        if (Sessions[message.author.id].mode == "pattern") {
+            Sessions[message.author.id].messages.push(message.content.toLowerCase());
+        } else {
+            Sessions[message.author.id].messages.push({ message: message.content.toLowerCase(), question: Sessions[message.author.id].question });
+        }
         message.react("✅");
 
         if (Sessions[message.author.id].mode == "response") {
             let Dataset = Sessions[message.author.id].dataset;
+            var question = Dataset.patterns[Math.floor(Math.random() * Dataset.patterns.length)];
             const Embed = new Discord.MessageEmbed()
                 .setTitle("**TRAIN**")
-                .setDescription(`**Respond to:**\n${Dataset.patterns[Math.floor(Math.random() * Dataset.patterns.length)]}`);
+                .setDescription(`**Respond to:**\n${question}`);
             message.channel.send(Embed);
+            Sessions[message.author.id].question = question;
         }
     },
     save: function (id) {
@@ -71,5 +78,5 @@ module.exports = {
     },
     getModel() {
         return model;
-    }
+    },
 }

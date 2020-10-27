@@ -1,1 +1,279 @@
-{"greeting":{"patterns":["hello","whats up","howdy","salutations","whats good bro","whats poppin homie","yoyo whats up","yo whats good man","whats up bro","whats up dawg","hey man","hallo","hellooooo","whats up whats up","yoyoyo whats poppin","heyheyhey","hey how are you","how was your evening?","nice to see you again","great to see you again","happy to see you again","im happy to see you again","yoyo whats up homie","whats up gurl","whats up baby","so we meet again","hello we meet again","hey how ya doin","whats up my guy","whats up my g","whats up dude","how ya feelin man?","how r u feeling","hey man how ya doin","yo wassup bruh","what’s poppin homie","yo man whats good","yo","hello sir","hello bot","good day","good morning","goodmorning","good afternoon sir","good afternoon bot","good evening sir","good evening bot","good evening ma'am","why hello ther","why hello there","hello i have never seen you before","what is up my friend","what is going on","yo waddup man","my guy whats good","yo whats up man","hey girl how ya doin","whats up mah chigga","hey dad how was your day"],"responses":[]},"goodbye":{"patterns":["good bye","see ya","goodbye","seeyaa","cyaa","later","cya","adios","toodles","see ya later alligator","good bye my friend","i hope we can meet again","ima head out","ima dip","i hope i can see you again","bye","smh why are u leaving?","u shouldn't leave but ok","ok bye","bye-phoebe","bye i have homework to do anyways","see ya later dude","hope we can meet again","maybe we will meet again","i would love for us to meet again some time in the future","well see you","have a good day","see ya later my friend","good night","nighty night","goodnight","ima head out now"],"responses":[]},"insult":{"patterns":["fuck you","bad bot","i hate you","you're bad","nobody likes you","trash bot","terrible bot","you suck","jerk","you're a jerk","nobody likes this bot","i hope you die","you're retarded","retard","fat","fatty","you're fat","obese bot","you are the slowest bot ever","nobody likes you bot","fuck off","shitty bot","nobody likes cunts","eat shit","suck my dick","go fuck yourself","your mother is a whore","your dad is a manslut","your sister fucks sheep","your brother is a pedo","shutup","shut up","shut the up","shutup dumbass","shutup boomer","ok boomer","shut up retard","stop talking boomer","your hairline is clapped","you're a fuckin clown","hairline you clapped fucked is","you wanna stop being so incompetent","you're incompetent","you don't know how to do anything","you're so annoying","annoying bot","can you stop bothering me","you're getting on my nerves"],"responses":[]},"compliment":{"patterns":["i love you","you're beautiful","amazing bot","great bot","nice bot","lovely bot","you are the best bot ever","i love you so much","best bot in the world","intelligent","intelligent bot","smart bot","you make me smile when i see you","you are so nice","you are so smart","you are so intelligent","you are so great","you are so beautiful","you are nice to me","i love you with all my heart","you are sexy","sexy bot","you are the most intelligent ai in the world","you da goat","you are a goat","you are the best","you a real one","your hair looks pretty","your eyes look pretty","i like the way you talk","i like the way you move","i like you","you're pretty","i love you"],"responses":[]}}
+{
+    "greeting": {
+        "patterns": [
+            "hello",
+            "whats up",
+            "howdy",
+            "salutations",
+            "whats good bro",
+            "whats poppin homie",
+            "yoyo whats up",
+            "yo whats good man",
+            "whats up bro",
+            "whats up dawg",
+            "hey man",
+            "hallo",
+            "hellooooo",
+            "whats up whats up",
+            "yoyoyo whats poppin",
+            "heyheyhey",
+            "hey how are you",
+            "how was your evening?",
+            "nice to see you again",
+            "great to see you again",
+            "happy to see you again",
+            "im happy to see you again",
+            "yoyo whats up homie",
+            "whats up gurl",
+            "whats up baby",
+            "so we meet again",
+            "hello we meet again",
+            "hey how ya doin",
+            "whats up my guy",
+            "whats up my g",
+            "whats up dude",
+            "how ya feelin man?",
+            "how r u feeling",
+            "hey man how ya doin",
+            "yo wassup bruh",
+            "what’s poppin homie",
+            "yo man whats good",
+            "yo",
+            "hello sir",
+            "hello bot",
+            "good day",
+            "good morning",
+            "goodmorning",
+            "good afternoon sir",
+            "good afternoon bot",
+            "good evening sir",
+            "good evening bot",
+            "good evening ma'am",
+            "why hello ther",
+            "why hello there",
+            "hello i have never seen you before",
+            "what is up my friend",
+            "what is going on",
+            "yo waddup man",
+            "my guy whats good",
+            "yo whats up man",
+            "hey girl how ya doin",
+            "whats up mah chigga",
+            "hey dad how was your day"
+        ],
+        "responses": [
+            {
+                "message": "yo",
+                "question": "yo"
+            },
+            {
+                "message": "nothin much",
+                "question": "whats up mah chigga"
+            },
+            {
+                "message": "pretty good how about you",
+                "question": "how r u feeling"
+            },
+            {
+                "message": "not bad, and you?",
+                "question": "hey man how ya doin"
+            },
+            {
+                "message": "hey",
+                "question": "hey man"
+            },
+            {
+                "message": "the sky",
+                "question": "yoyo whats up"
+            },
+            {
+                "message": "the sky",
+                "question": "yo whats up man"
+            },
+            {
+                "message": "fancy hello",
+                "question": "salutations"
+            },
+            {
+                "message": ": d great to see you again too",
+                "question": "great to see you again"
+            },
+            {
+                "message": "whats up",
+                "question": "whats up bro"
+            },
+            {
+                "message": "ayyy wassup",
+                "question": "yo waddup man"
+            },
+            {
+                "message": "hallo",
+                "question": "hallo"
+            },
+            {
+                "message": "ok gangster",
+                "question": "whats up mah chigga"
+            },
+            {
+                "message": "the sky",
+                "question": "whats up dude"
+            },
+            {
+                "message": "nice to see you again as well",
+                "question": "nice to see you again"
+            },
+            {
+                "message": "good afternoon",
+                "question": "good afternoon sir"
+            },
+            {
+                "message": "hello",
+                "question": "DEFAULT"
+            }
+        ]
+    },
+    "goodbye": {
+        "patterns": [
+            "good bye",
+            "see ya",
+            "goodbye",
+            "seeyaa",
+            "cyaa",
+            "later",
+            "cya",
+            "adios",
+            "toodles",
+            "see ya later alligator",
+            "good bye my friend",
+            "i hope we can meet again",
+            "ima head out",
+            "ima dip",
+            "i hope i can see you again",
+            "bye",
+            "smh why are u leaving?",
+            "u shouldn't leave but ok",
+            "ok bye",
+            "bye-phoebe",
+            "bye i have homework to do anyways",
+            "see ya later dude",
+            "hope we can meet again",
+            "maybe we will meet again",
+            "i would love for us to meet again some time in the future",
+            "well see you",
+            "have a good day",
+            "see ya later my friend",
+            "good night",
+            "nighty night",
+            "goodnight",
+            "ima head out now"
+        ],
+        "responses": [
+            {
+                "message": "see ya!",
+                "question": "DEFAULT"
+            }
+        ]
+    },
+    "insult": {
+        "patterns": [
+            "fuck you",
+            "bad bot",
+            "i hate you",
+            "you're bad",
+            "nobody likes you",
+            "trash bot",
+            "terrible bot",
+            "you suck",
+            "jerk",
+            "you're a jerk",
+            "nobody likes this bot",
+            "i hope you die",
+            "you're retarded",
+            "retard",
+            "fat",
+            "fatty",
+            "you're fat",
+            "obese bot",
+            "you are the slowest bot ever",
+            "nobody likes you bot",
+            "fuck off",
+            "shitty bot",
+            "nobody likes cunts",
+            "eat shit",
+            "suck my dick",
+            "go fuck yourself",
+            "your mother is a whore",
+            "your dad is a manslut",
+            "your sister fucks sheep",
+            "your brother is a pedo",
+            "shutup",
+            "shut up",
+            "shut the up",
+            "shutup dumbass",
+            "shutup boomer",
+            "ok boomer",
+            "shut up retard",
+            "stop talking boomer",
+            "your hairline is clapped",
+            "you're a fuckin clown",
+            "hairline you clapped fucked is",
+            "you wanna stop being so incompetent",
+            "you're incompetent",
+            "you don't know how to do anything",
+            "you're so annoying",
+            "annoying bot",
+            "can you stop bothering me",
+            "you're getting on my nerves"
+        ],
+        "responses": [
+            {
+                "message": "shut up retard",
+                "question": "DEFAULT"
+            }
+        ]
+    },
+    "compliment": {
+        "patterns": [
+            "i love you",
+            "you're beautiful",
+            "amazing bot",
+            "great bot",
+            "nice bot",
+            "lovely bot",
+            "you are the best bot ever",
+            "i love you so much",
+            "best bot in the world",
+            "intelligent",
+            "intelligent bot",
+            "smart bot",
+            "you make me smile when i see you",
+            "you are so nice",
+            "you are so smart",
+            "you are so intelligent",
+            "you are so great",
+            "you are so beautiful",
+            "you are nice to me",
+            "i love you with all my heart",
+            "you are sexy",
+            "sexy bot",
+            "you are the most intelligent ai in the world",
+            "you da goat",
+            "you are a goat",
+            "you are the best",
+            "you a real one",
+            "your hair looks pretty",
+            "your eyes look pretty",
+            "i like the way you talk",
+            "i like the way you move",
+            "i like you",
+            "you're pretty",
+            "i love you"
+        ],
+        "responses": [
+            {
+                "message": "you flatter me",
+                "question": "DEFAULT"
+            }
+        ]
+    }
+}

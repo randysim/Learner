@@ -15,6 +15,7 @@ module.exports = {
         }
         message.channel.send("Please wait... Model is being trained");
         var Model = await trainAI();
+        Model.save("file:///Users/phone/OneDrive/Desktop/TextAI");
         Session.addModel(Model);
         message.channel.send("AI Succcessfully trained");
     }

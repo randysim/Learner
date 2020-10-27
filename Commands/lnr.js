@@ -2,20 +2,18 @@ const Discord = require("discord.js");
 const Fs = require("fs");
 const Session = require("../Training/Session.js");
 const use = require("@tensorflow-models/universal-sentence-encoder");
+const tf = require("@tensorflow/tfjs-node");
 var lastcommand = 0;
 
 module.exports = {
     names: ["lnr", "learner"],
     async execute(Env) {
         const message = Env.message;
-
         const args = Env.args;
         var model = Session.getModel();
         if (!model) {
-            const ErrorEmbed = new Discord.MessageEmbed()
-                .setTitle("**ERROR**")
-                .setDescription("No model available for testing. Please ask someone to train it");
-            return message.channel.send(ErrorEmbed);
+            model = await tf.loadLayersModel("file:///Users/phone/OneDrive/Desktop/TextAI/model.json");
+            Session.addModel(model);
         }
 
         var phrase = args.slice(1).join(" ");

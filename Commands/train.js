@@ -46,10 +46,11 @@ module.exports = {
             Session.add(message.author.id, args[1]);
         } else {
             var Dataset = JSON.parse(Fs.readFileSync("./Convo/Dataset.json"))[args[1]];
+            var Response = Dataset.patterns[Math.floor(Math.random() * Dataset.patterns.length)];
             TrainEmbed = new Discord.MessageEmbed()
                 .setTitle("**TRAIN**")
-                .setDescription(`**Respond to:**\n${Dataset.patterns[Math.floor(Math.random() * Dataset.patterns.length)]}`)
-            Session.addResponse(message.author.id, args[1], Dataset);
+                .setDescription(`**Respond to:**\n${Response}`)
+            Session.addResponse(message.author.id, args[1], Dataset, Response);
         }
 
         message.channel.send(TrainEmbed);
