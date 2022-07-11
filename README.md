@@ -1,9 +1,5 @@
 # Learner
 
-This is my first machine learning project (ever). 
+Discord AI Deep Learning Chat Bot trained by the discord server
 
-This is also probably everyone else's' first machine learning projects (ever)
-
-Do I understand the logic behind everything (not yet)
-
-Does it work? (yes)
+Uses: Discord.js, Tensorflow.js
